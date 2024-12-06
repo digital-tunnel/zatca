@@ -1,0 +1,49 @@
+{
+    "name": "digitaltunnel/zatca",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hossam H Ibrahim",
+            "email": "hey@digitaltunnel.net"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^9.6",
+        "pestphp/pest": "^3.6",
+        "phpstan/phpstan": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalTunnel\\Zatca\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DigitalTunnel\\Zatca\\Tests\\": "tests/",
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DigitalTunnel\\Zatca\\ZatcaServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
