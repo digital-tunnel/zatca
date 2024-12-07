@@ -39,7 +39,7 @@ ZATCA_CONNECT_API_KEY="user token here" #Get API key from ZATCA Connect dashboar
     use DigitalTunnel\Zatca\Data\CSRDetails;
     use DigitalTunnel\Zatca\Facades\ZatcaConnect;
 
-  ZatcaConnect::setEnviroment("developer")
+  ZatcaConnect::setEnviroment("developer") // developer, simulation, production
       ->setOtp(123456)
       ->setCSRDetails(
         new CSRDetails(
